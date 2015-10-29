@@ -1,0 +1,97 @@
+<div data-role="view" data-title="Calculator" data-layout="main" data-model="app.calculator" data-show="app.calculator.onShow" data-after-show="app.calculator.afterShow">
+    <div id="calculatorModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Width
+                        <input data-bind="value: calculatorModel.fields.width" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Length
+                        <input data-bind="value: calculatorModel.fields.length" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Quantity
+                        <input data-bind="value: calculatorModel.fields.quantity" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Fabric Width
+                        <input data-bind="value: calculatorModel.fields.fabric" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Horizontal Repeat
+                        <input data-bind="value: calculatorModel.fields.horiz" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Vertical Repeat
+                        <input data-bind="value: calculatorModel.fields.vert" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Edge Allowance
+                        <input data-bind="value: calculatorModel.fields.edge" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Switch from inches to mm
+                        <input data-bind="value: calculatorModel.fields.switch" data-role="switch">
+                    </label>
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Style</h4>
+                </li>
+                <li>
+                    <label>Flat
+                        <input data-bind="value: calculatorModel.fields.radio2" type="radio" name="group1">
+                    </label>
+                </li>
+                <li>
+                    <label>Hobbled
+                        <input data-bind="value: calculatorModel.fields.radio3" type="radio" name="group1">
+                    </label>
+                </li>
+                <li>
+                    <label>Slatted
+                        <input data-bind="value: calculatorModel.fields.radio4" type="radio" name="group1">
+                    </label>
+                </li>
+                <li>
+                    <label>Tucked
+                        <input data-bind="value: calculatorModel.fields.radio5" type="radio" name="group1">
+                    </label>
+                </li>
+                <li>
+                    <label>Valance Seed
+                        <input data-bind="value: calculatorModel.fields.seed" type="number">
+                    </label>
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Orientation</h4>
+                </li>
+                <li>
+                    <label>Width
+                        <input data-bind="value: calculatorModel.fields.updown" type="radio" name="group2">
+                    </label>
+                </li>
+                <li>
+                    <label>Length
+                        <input data-bind="value: calculatorModel.fields.sideside" type="radio" name="group2">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a class="primary" data-role="button" data-bind="events: { click: calculatorModel.submit }">Calculate</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_calculatorModel -->
+        <!-- END_CUSTOM_CODE_calculatorModel -->
+    </div>
+    <!-- START_CUSTOM_CODE_calculator -->
+    <!-- END_CUSTOM_CODE_calculator -->
+</div>

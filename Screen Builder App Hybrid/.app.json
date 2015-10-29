@@ -1,4 +1,159 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true
+  "views": [
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "homeView",
+      "components": [],
+      "title": "eBook",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "calculator",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "width",
+              "title": "Width",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "length",
+              "title": "Length",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "quantity",
+              "title": "Quantity",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "fabric",
+              "title": "Fabric Width",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "horiz",
+              "title": "Horizontal Repeat",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "vert",
+              "title": "Vertical Repeat",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "edge",
+              "title": "Edge Allowance",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "switch",
+              "title": "Switch from inches to mm",
+              "inputType": "switch"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "group1",
+              "title": "Style",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "radio2",
+              "title": "Flat",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "radio3",
+              "title": "Hobbled",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "radio4",
+              "title": "Slatted",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "radio5",
+              "title": "Tucked",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "seed",
+              "title": "Valance Seed",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "group2",
+              "title": "Orientation",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "updown",
+              "title": "Width",
+              "inputType": "radio",
+              "group": "group2"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "sideside",
+              "title": "Length",
+              "inputType": "radio",
+              "group": "group2"
+            }
+          ],
+          "name": "calculatorModel",
+          "submitButton": "Calculate"
+        }
+      ],
+      "title": "Calculator",
+      "addToNavigation": true,
+      "icon": "mostrecent"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "sailrite",
+      "components": [],
+      "title": "Sailrite",
+      "addToNavigation": true,
+      "icon": "globe"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "videos",
+      "components": [],
+      "title": "Videos",
+      "addToNavigation": true,
+      "icon": "camera"
+    }
+  ],
+  "dataProviders": [],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "homeView",
+  "transition": "slide",
+  "skin": "flat"
 }
